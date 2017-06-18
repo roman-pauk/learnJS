@@ -34,7 +34,7 @@ const iter = (data) => {
 
 		const processedBody = body instanceof Array ? iter(body) : body;
 		const result = {type: 'tag', name: data[0], body: processedBody, options};
-		console.log(result);
+		//console.log(result);
 		return result;
 	};
 
@@ -95,3 +95,5 @@ const buildHtml = tagArr => {
 };
 
 //export default buildHtml;
+
+console.log(buildHtml(dat));
